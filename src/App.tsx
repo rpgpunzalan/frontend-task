@@ -14,6 +14,7 @@ import "./App.css";
 
 // fontawesome
 import initFontAwesome from "./utils/initFontAwesome";
+import Filter from "./components/Filter";
 initFontAwesome();
 
 interface AppProps {
@@ -30,7 +31,7 @@ class App extends Component<AppProps> {
     }
 
     if (isLoading) {
-      return <Loading />;
+      // return <Loading />;
     }
 
     return (
@@ -41,6 +42,7 @@ class App extends Component<AppProps> {
             <Switch>
               <Route path="/" exact component={Home} />
               <Route path="/profile" component={Profile} />
+              <Route path="/filter" component={Filter} />
             </Switch>
           </Container>
         </div>

@@ -68,6 +68,16 @@ class NavBar extends Component<NavBarProps, NavBarState> {
                     Home
                   </NavLink>
                 </NavItem>
+                <NavItem>
+                  <NavLink
+                    tag={RouterNavLink}
+                    to="/filter"
+                    exact
+                    activeClassName="router-link-exact-active"
+                  >
+                    Filter
+                  </NavLink>
+                </NavItem>
               </Nav>
               <Nav className="d-none d-md-block" navbar>
                 {!isAuthenticated && (
